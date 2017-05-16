@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/bmanch/FriendFinder/issues"
   },
-  "homepage": "https://github.com/bmanch/FriendFinder#readme"
+  "homepage": "https://github.com/bmanch/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
 }
