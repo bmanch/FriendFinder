@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Friend Finder Survey</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Barrio|Raleway" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -200,7 +202,7 @@
 		      <div class="modal-body" id="image">
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" id="close" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
 		  </div>
@@ -247,14 +249,14 @@
 	    		console.log(data);
 	    		$('#myModalLabel').text(data.name);
 	    		$('#image').html('<img src=' + data.photo + ' alt=' + data.name + 'width=400 height=400>');
+
+	    		$('#name').val("");
+	    		$('#photo').val("");
+	    		for (var i = 1; i < 11; i++) {
+	    			$('#q' + i).text("Select an Option");
+	    		}
 	    	});
-
-	    	$.get("/api/friends", function(data) {});
 	    });
-
-	    $('#close').on('click', function(event) {
-
-	    })
     </script>
 </body>
 </html>
