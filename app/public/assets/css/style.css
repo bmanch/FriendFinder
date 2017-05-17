@@ -1,12 +1,62 @@
 body {
+	background-image: url("../images/crossword.png");
 	font-family: 'Raleway', sans-serif;
-	background-color: orange;
+	color: #333232;
 }
 
 .jumbotron {
-
+	margin-top: 40px;
+	background-color: #19647E;
+	color: #F3B61F;
 }
 
 #marquee {
 	font-family: 'Barrio', cursive;
+}
+
+#survey {
+	width: 240px;
+	background-color: #F3B61F;
+	color: #19647E;
+	border-radius: 40px;
+}
+
+#survey:hover {
+	background-color: #0CCE6B;
+}
+
+#survey:focus {
+	outline: 0;
+}
+
+a {
+	color: #0CCE6B;
+}
+
+a:hover {
+	color: #960200;
+}
+
+/*survey.html*/
+
+.select {
+	width: 160px;
+}
+
+#submit {
+	width: 240px;
+	color: #fff;
+	border-color: #0CCE6B;
+	background-color: #0CCE6B;
+	border-radius: 40px;
+}
+
+#submit:hover {
+	color: #19647E;
+	border-color: #F3B61F;
+	background-color: #F3B61F;
+}
+
+#submit:focus {
+	outline: 0;
 }

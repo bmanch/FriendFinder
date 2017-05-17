@@ -12,20 +12,22 @@
 	<div class="container">
 		
 		<div class="page-header">
-			<h1>Survey Questions</h1>
+			<h1 id="marquee">Survey Questions</h1>
 		</div>
 		<br>
 		<h2>About You</h2>
+		<h5>(Note: If you don't fill in these fields, the name will default to "Nobody", and a default image will be used.)
 		<h4>Name (Required)</h4>
 		<input type="text" id="name" class="form-control">
 		<h4>Link to Photo Image (Required)</h4>
 		<input type="text" id="photo" class="form-control">
 		<div class="page-header">
 		</div>
+		<h5>(Note: If you don't choose a value for a question, then the answer will default to 3.)</h5>
 		<h3>Question 1</h3>
 		<h4>With nothing on your agenda, you would rather relax and watch a movie than go out on a hike.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q1">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q1">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -41,7 +43,7 @@
 		<h3>Question 2</h3>
 		<h4>You'd rather cook a meal with your partner than go out for a meal.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q2">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q2">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -57,7 +59,7 @@
 		<h3>Question 3</h3>
 		<h4>You like to have conversations about politics, religion, and social issues.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q3">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q3">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -73,7 +75,7 @@
 		<h3>Question 4</h3>
 		<h4>You prefer donuts to kale.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q4">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q4">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -89,7 +91,7 @@
 		<h3>Question 5</h3>
 		<h4>You like dramas more than comedies.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q5">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q5">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -105,7 +107,7 @@
 		<h3>Question 6</h3>
 		<h4>You read books more than you watch television.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q6">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q6">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -121,7 +123,7 @@
 		<h3>Question 7</h3>
 		<h4>You love to watch sports.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q7">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q7">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -137,7 +139,7 @@
 		<h3>Question 8</h3>
 		<h4>You dream of going on vacations out of the country.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q8">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q8">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -153,7 +155,7 @@
 		<h3>Question 9</h3>
 		<h4>You would rather save money for a big vacation than go out to restaurants a lot.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q9">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q9">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -169,7 +171,7 @@
 		<h3>Question 10</h3>
 		<h4>You think Harry Potter is better than The Hunger Games.</h4>
 		<div class="btn-group">
-		  	<button type="button" class="btn btn-default" id="q10">Select an Option</button>
+		  	<button type="button" class="btn btn-default select" id="q10">Select an Option</button>
 		  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    	<span class="caret"></span>
 		    	<span class="sr-only">Toggle Dropdown</span>
@@ -187,9 +189,11 @@
 			<p><a class="btn btn-primary btn-lg" id="submit" href="#" role="button">Submit</a></p>
 		</div> -->
 		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary btn-lg" id="submit" data-toggle="modal" data-target="#myModal">
-		  Submit
-		</button>
+		<div class="row text-center">
+			<button type="button" class="btn btn-primary btn-lg" id="submit" data-toggle="modal" data-target="#myModal">
+			  Submit
+			</button>
+		</div>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -197,7 +201,7 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title" id="myModalLabel"></h4>
+		        <h4 class="modal-title" id="myModalLabel">Your New BFF</h4>
 		      </div>
 		      <div class="modal-body" id="image">
 		      </div>
@@ -222,41 +226,6 @@
         src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
-	    $('.choice').on('click', function(event) {
-	    	event.preventDefault();
-	    	var rating = $(this).text();
-	    	$(this).parent().parent().children().first().text(rating);
-	    });
-
-	    $('#submit').on('click', function(event) {
-	    	event.preventDefault();
-	    	var scores = [];
-	    	for (var i = 1; i < 11; i++) {
-	    		var score = $('#q' + i).text().charAt(0);
-	    		scores.push(score);
-	    	}
-
-	    	console.log(scores);
-
-	    	var newFriend = {
-	    		name: $('#name').val().trim(),
-	    		photo: $('#photo').val().trim(),
-	    		scores: scores
-	    	}
-	    	
-	    	$.post("/api/friends", newFriend, function(data) {
-	    		console.log(data);
-	    		$('#myModalLabel').text(data.name);
-	    		$('#image').html('<img src=' + data.photo + ' alt=' + data.name + 'width=400 height=400>');
-
-	    		$('#name').val("");
-	    		$('#photo').val("");
-	    		for (var i = 1; i < 11; i++) {
-	    			$('#q' + i).text("Select an Option");
-	    		}
-	    	});
-	    });
-    </script>
+    <script type="text/javascript" src="assets/javascript/survey.js"></script>
 </body>
 </html>

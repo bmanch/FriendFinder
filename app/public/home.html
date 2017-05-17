@@ -10,23 +10,19 @@
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron text-center">
 			<div class="page-header">
 				<h1 id="marquee">Friend Finder</h1>
 			</div>
 			<h2>Just answer a few basic questions</h2>
 			<h2>Then meet your new BFF</h2>
 			<br>
-		  	<p><a class="btn btn-primary btn-lg" href="/survey" role="button"><span class="glyphicon glyphicon-list-alt"></span>   <strong>Go to Survey</strong></a></p>
+		  	<p><a class="btn btn-primary btn-lg" id="survey" href="/survey" role="button"><span class="glyphicon glyphicon-list-alt"></span>   <strong>Go to Survey</strong></a></p>
 		</div>
-		<p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/bmanch/FriendFinder" target="_blank">Github Repo</a></p>
+		<div class="row text-center">
+			<h4><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/bmanch/FriendFinder" target="_blank">Github Repo</a></h4>
+		</div>
 	</div>
-	
-	<nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
-        <div class="container text-center">
-            <p class="navbar-text text-center">&copy; Copyright 2017 Brian Manchester</p>
-        </div>
-    </nav>
 
 	<script
         src="https://code.jquery.com/jquery-3.2.1.js"

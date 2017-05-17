@@ -2,7 +2,6 @@ var friends = require("../data/friends");
 
 module.exports = function(app) {
 	app.get("/api/friends", function(req, res) {
-		console.log("inside");
 		res.json(friends);
 	});
 
@@ -26,12 +25,8 @@ module.exports = function(app) {
 			totalDifference = 0;
 		}
 
-		console.log(comparisons);
-
 		var min = Math.min.apply(null, comparisons);
-		console.log(min);
 		var index = comparisons.indexOf(min);
-		console.log(index);
 		res.json(friends[index]);
 		friends.push(req.body);
 	});
